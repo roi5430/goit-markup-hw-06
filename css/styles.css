@@ -573,7 +573,7 @@ address {
 
   background-color: transparent;
   outline: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-color);
   font-size: 16px;
   border-radius: 4px;
   transition: border-color var(--timing-function);
@@ -805,17 +805,14 @@ li > p {
   transition: border-color var(--timing-function);
 }
 
-.modal-input:hover,
 .modal-input:focus,
-.footer-input:focus,
-.footer-input:hover {
+.footer-input:focus {
   border-color: var(--accent-color);
 
   outline: transparent;
 }
 
-.modal-input:focus + .input-icon,
-.modal-input:hover + .input-icon {
+.modal-input:focus + .input-icon {
   fill: var(--accent-color);
 }
 
@@ -890,8 +887,7 @@ li > p {
   fill: transparent;
 }
 
-.check-text:focus span,
-.check-text:hover span {
+.input-check:focus + .check-text span {
   border: 2px solid var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
